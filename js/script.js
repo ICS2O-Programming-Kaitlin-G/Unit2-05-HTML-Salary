@@ -17,6 +17,7 @@ function calculateMoney() {
   let whole_received = whole_earnings - government_takes
 
   // and now we print it :)
-  document.getElementById('total_earnings').innerHTML = 'With these values, you have made $' + whole-earnings.toFixed(2) + '.'
-  document.getElementById('government_claims').innerHTML = 'With these values, the government is stealing $' + government-takes.toFixed(2) + '.'
+  document.getElementById('total_earnings').innerHTML = 'With these values, you have earned $' + whole_earnings.toFixed(2)
+  document.getElementById('government_claims').innerHTML = 'With these values, the government is stealing $' + government_takes.toFixed(2)
+  document.getElementById('amount_received').innerHTML = 'With these values, you are taking home $' + whole_received.toFixed(2)
 }
