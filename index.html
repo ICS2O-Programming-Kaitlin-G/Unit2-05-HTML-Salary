@@ -35,13 +35,55 @@
     <!-- Container for web page content -->
     <main class = "mdl-layout__content" style = "padding-left:10px">
       <center>
+        
+        <!-- header and image -->
         <h1>Wow! I've Made Money!</h1>
         <img src="./images/coins-on-counter.jpg" alt="M O N E Y" height="300px" width="600px">
       </center>
       <br>
       <br>
+      
+      <!-- Web page text info kind of lore :) -->
       <p>Welcome to the hit game show, "Wow! I've Made Money!", where we calculate how much you've made based on your hourly pay and the number of hours you've worked, and also how much the government has taken from you!!!</p>
       <p>Here on this show, we believe that the people should keep their money. So instead of giving it in taxes, spend it all!!! the government can't take from you if you have nothing left! :)</p>
       <p>hahaha anyways.... enter your information below to participate in our lovely game show! <sup>please note that Wow! I've Made Money! is not responsible for any decisions taken after viewing this web page. this lifestyle has not actually been attempted by anyone who works for the game show and thus we cannot guarantee the efficacy of this program. If something terrible happens, we are not to be held liable in court :)</sup></p>
-
-      <
+      
+      <!-- Hourly Wage field input section mdl formatted -->
+      <form action="javascript:calculateMoney()">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hourly_wage">
+          <label class="mdl-textfield__label" for="hourly_wage">Hourly Wage</label>
+          <span class="mdl-textfield__error">This is not money! You have lied on the gameshow!! how could you!</span>
+        </div>
+        <br>
+        <br>
+        
+        <!-- Hours Worked field input mdl formatted section under the same form -->
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hours_worked">
+            <label class="mdl-textfield__label" for="hours_worked">Hours Worked</label>
+            <span class="mdl-textfield__error">Not Money!!!! >:(</span>
+          </div>
+        <br>
+        <br>
+  
+        <!-- MDL formatted button to calculate money -->
+        <button onclick="calculateMoney()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          Find out now!!!!
+        </button>
+      </form>
+      <br>
+      <br>
+      
+      <!-- final product printed out :) -->
+      <div id="final_product">
+        <div id="total_earnings"></div>
+        <div id="government_claims"></div>
+        <div id="amount_received"></div>
+      </div>
+      <br>
+      <br>
+    </main>
+    </div>
+  </body>
+</html>

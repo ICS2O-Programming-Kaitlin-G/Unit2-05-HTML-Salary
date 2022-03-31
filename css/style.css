@@ -1,0 +1,25 @@
+/* Created by: Katie
+* Created on: March 2022
+* This CSS file defines the style for index.html
+* ICS2O-Unit2-04-HTML-AreaPer-UserInput
+*/
+
+body {
+  background-color: rosybrown;
+}
+
+h1 {
+  color: deeppink;
+  background-color: lightgoldenrodyellow;
+  padding: 30px;
+}
+
+img {
+  border: solid 10px lightgoldenrodyellow;
+}
+
+p {
+  background-color: lightgoldenrodyellow;
+  color: deeppink;
+  padding: 25px;
+}
